@@ -14,7 +14,7 @@ Thanks for your interest in improving CRP!
 1. Create a new file in `adaptations/` with the platform name (e.g., `adaptations/cursor.md`)
 2. Follow the same structure as existing adaptations:
    - Clarify trigger mechanism for the platform
-   - Translate the four roles and seven steps into platform-native format
+   - Translate the five roles and eight steps into platform-native format
    - Include the output format template
    - Document behavior rules in platform-native terms
 3. Submit a PR with a brief description of the platform's differences
@@ -25,6 +25,7 @@ If you improve the core `skills/crp/SKILL.md`:
 - Keep the YAML frontmatter valid
 - Maintain backward compatibility with existing adaptations (or update them too)
 - Test your changes with at least one strategic decision scenario
+- New roles or steps must be added after existing ones (don't reorder)
 
 ## PR Process
 

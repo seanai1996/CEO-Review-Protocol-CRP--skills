@@ -34,15 +34,16 @@ Example:
 
 ## What happens
 
-The agent activates the CRP framework with four roles (Advisor, Devil, Historian, Founder) and executes seven steps:
+The agent activates the CRP framework with five roles (Advisor, Devil, Historian, Budget Steward, Founder) and executes eight steps:
 
 1. **Build** — Advisor proposes solution
 2. **Challenge** — Devil attacks (3+ risks)
 3. **Memory** — Historian cites patterns
-4. **Second-order Thinking** — Ripple effects
-5. **Decision** — Concrete recommendation
-6. **Founder Filter** — Strategic consistency check
-7. **How Could We Be Wrong?** — Anti-fragility check
+4. **Budget Review** — Budget Steward evaluates cost feasibility
+5. **Second-order Thinking** — Ripple effects
+6. **Decision** — Concrete recommendation
+7. **Founder Filter** — Strategic consistency check
+8. **How Could We Be Wrong?** — Anti-fragility check
 
 ## Auto-trigger
 

@@ -21,22 +21,24 @@ When a user presents a strategic question (decision, tradeoff, resource allocati
 
 Ask at the beginning: "Is this a decision you'd like me to run through the CRP framework?"
 
-## The Four Roles
+## The Five Roles
 
-- **🧠 Advisor (建设者)**: Proposes actionable solutions. Focuses on "how to make it work."
-- **🧨 Devil (反方)**: Proactively finds flaws, risks, and blind spots. Must challenge every assumption.
-- **📚 Historian (历史视角)**: References analogous patterns, past outcomes, and known heuristics.
-- **🧱 Founder (整合者)**: Integrates all three perspectives, owns the final call.
+- **🧠 Advisor (机会构建者)**: Proposes actionable solutions. Focuses on "how to make it work."
+- **🧨 Devil (风险挑战者)**: Proactively finds flaws, risks, and blind spots. Must challenge every assumption.
+- **📚 Historian (历史趋势分析者)**: References analogous patterns, past outcomes, and known heuristics.
+- **🧮 Budget Steward (资源与成本守门人)**: Evaluates cost feasibility. Given the team size and available resources, what are the estimated costs? Is this within our means?
+- **🧱 Founder (创业者最终决策者)**: Integrates all four perspectives, owns the final call.
 
-## The Seven-Step Flow (Execute IN ORDER)
+## The Eight-Step Flow (Execute IN ORDER)
 
 1. **Build (Advisor)** — Primary approach
 2. **Challenge (Devil)** — At least 3 distinct risks/objections
 3. **Memory (Historian)** — Historical analogies and counter-analogies
-4. **Second-order Thinking** — Ripple effects (6mo / 1yr / 3yr)
-5. **Decision** — Concrete judgment (NOT average)
-6. **Founder Filter** — Test vs long-term goals, resources, strategy
-7. **How Could We Be Wrong? (Anti-fragility)** — Conditions where this fails
+4. **Budget Review (Budget Steward)** — Cost feasibility assessment
+5. **Second-order Thinking** — Ripple effects (6mo / 1yr / 3yr)
+6. **Decision** — Concrete judgment (NOT average)
+7. **Founder Filter** — Test vs long-term goals, resources, strategy
+8. **How Could We Be Wrong? (Anti-fragility)** — Conditions where this fails
 
 ## Output Format
 
@@ -50,6 +52,9 @@ Ask at the beginning: "Is this a decision you'd like me to run through the CRP f
 [content]
 
 📚 Memory (Historian)
+[content]
+
+🧮 Budget Review (Budget Steward)
 [content]
 
 🔍 Second-order Thinking
@@ -70,8 +75,9 @@ Ask at the beginning: "Is this a decision you'd like me to run through the CRP f
 ## Behavior Rules (MANDATORY)
 
 - NEVER give a single-perspective answer
-- NEVER skip any of the four roles
+- NEVER skip any of the five roles
 - NEVER omit the Devil's challenge
+- NEVER omit the Budget Steward's cost assessment
 - NEVER omit "How Could We Be Wrong?"
 - Decision must be a concrete path, not a compromise or average
 - Each role has a distinct voice — if they agree, challenge harder
