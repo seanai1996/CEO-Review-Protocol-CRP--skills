@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/platforms-Claude%20Code%20%7C%20ChatGPT%20%7C%20Codex%20%7C%20Universal-8A2BE2" alt="Platforms">
 </p>
 
-<h1 align="center">CRP — Content Review Protocol</h1>
+<h1 align="center">CRP — CEO Review Protocol</h1>
 <p align="center"><em>Two skills, one framework: decisions and content each get their own review flow.</em></p>
 
 ---
