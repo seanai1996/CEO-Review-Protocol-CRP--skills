@@ -1,4 +1,4 @@
-# Contributing to CEO Review Protocol (CRP)
+# Contributing to CRP
 
 Thanks for your interest in improving CRP!
 
@@ -13,18 +13,19 @@ Thanks for your interest in improving CRP!
 
 1. Create a new file in `adaptations/` with the platform name (e.g., `adaptations/cursor.md`)
 2. Follow the same structure as existing adaptations:
-   - Clarify trigger mechanism for the platform
-   - Translate the five roles and eight steps into platform-native format
-   - Include the output format template
+   - Clarify the trigger mechanism for both `crp:decision` and `crp:content`
+   - Translate the role sets and output formats into platform-native format
+   - Include guidance for when to use each skill
    - Document behavior rules in platform-native terms
 3. Submit a PR with a brief description of the platform's differences
 
 ## Skill Changes
 
-If you improve the core `skills/crp/SKILL.md`:
+If you improve the core skills:
 - Keep the YAML frontmatter valid
-- Maintain backward compatibility with existing adaptations (or update them too)
-- Test your changes with at least one strategic decision scenario
+- Maintain backward compatibility with existing adaptations, or update them too
+- Update both `skills/crp-decision/SKILL.md` and `skills/crp-content/SKILL.md` when the shared CRP behavior changes
+- Test your changes with at least one strategic decision scenario and one content review scenario
 - New roles or steps must be added after existing ones (don't reorder)
 
 ## PR Process

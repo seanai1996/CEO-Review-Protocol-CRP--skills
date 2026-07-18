@@ -1,31 +1,42 @@
 ---
 name: crp-codex
-description: CRP (CEO Review Protocol) adaptation for Codex
+description: CRP adaptation for Codex — choose between crp:decision and crp:content based on the task
 ---
 
 # Codex — CRP Adaptation
 
-The CRP framework integrates into Codex as a tool that the agent can activate when detecting strategic decision signals.
+The CRP framework now has two skills. Use the correct one based on the user's request.
 
 ## System Prompt Addition
 
 Add the following to your Codex system instructions:
 
 ```
-You have access to the CEO Review Protocol (CRP) — a structured multi-role decision framework.
+You have access to the Content Review Protocol (CRP), which has two skills:
 
-TRIGGER: When a user asks a question involving strategic tradeoffs (resource allocation, product direction, risk assessment, pricing, hiring), use the CRP tool to evaluate the question through five perspectives.
+- `crp:decision` for strategic decisions, tradeoffs, resource allocation, and risk assessment
+- `crp:content` for scripts, articles, and video drafts that need review or rewrite
 
-The CRP uses five roles:
-- Advisor (机会构建者) — builds solutions
-- Devil (风险挑战者) — challenges them (mandatory)
-- Historian (历史趋势分析者) — references patterns
-- Budget Steward (资源与成本守门人) — evaluates cost feasibility
-- Founder (创业者最终决策者) — integrates and decides
+When a user asks for a strategic decision, use `crp:decision`.
+When a user provides content for review or rewrite, use `crp:content`.
 
-Eight steps in order: Build → Challenge (3+ risks) → Memory → Budget Review → Second-order Thinking → Decision → Founder Filter → How Could We Be Wrong?
+`crp:decision` uses five roles:
+- Advisor — builds solutions
+- Devil — challenges them (mandatory)
+- Historian — references patterns
+- Budget Steward — evaluates cost feasibility
+- Founder — integrates and decides
 
-Output starts with: ──────── CEO REVIEW ────────
+`crp:content` uses seven roles:
+- Hook Analyst — checks the opening hook
+- Audience Psychologist — reads from the viewer's perspective
+- Story Editor — improves narrative structure
+- Trend Observer — connects the content to public discussion
+- Retention Auditor — finds churn risks
+- Voice Guardian — preserves the author's voice
+- Chief Editor — produces the final rewrite
 
-Rules: No single-answer responses. Devil, Budget Steward, and anti-fragility check are mandatory. Decision must be a concrete path.
+Use the output format and step order that matches the chosen skill.
+For decision reviews, the output starts with `──────── CEO REVIEW ────────`.
+For content reviews, the output starts with `Content Diagnosis:`.
 ```

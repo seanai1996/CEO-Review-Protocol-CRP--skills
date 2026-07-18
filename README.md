@@ -4,16 +4,19 @@
   <img src="https://img.shields.io/badge/platforms-Claude%20Code%20%7C%20ChatGPT%20%7C%20Codex%20%7C%20Universal-8A2BE2" alt="Platforms">
 </p>
 
-<h1 align="center">🧠 CEO Review Protocol (CRP)</h1>
-<p align="center"><em>A decision is only as good as the strongest challenge it survives.</em></p>
+<h1 align="center">CRP — Content Review Protocol</h1>
+<p align="center"><em>Two skills, one framework: decisions and content each get their own review flow.</em></p>
 
 ---
 
 ## What is CRP?
 
-**CRP** (CEO Review Protocol) is a **structured multi-role decision framework** that transforms any strategic question from "what's the right answer?" into "what do five distinct perspectives reveal about the tradeoffs?"
+**CRP** is a structured multi-role framework with two separate skills:
 
-Instead of giving a single recommendation, CRP forces a decision through five adversarial roles — ensuring blind spots are exposed, assumptions are stress-tested, costs are accounted for, and the final decision accounts for what could go wrong.
+- **`crp:decision`** — strategic decision review
+- **`crp:content`** — content review and rewrite
+
+The shared principle is the same: a result is only as good as the strongest challenge it survives. The execution is different depending on whether you are making a decision or reviewing content.
 
 ## Why CRP?
 
@@ -21,37 +24,53 @@ Most AI assistants give you **one answer** — a single perspective optimized fo
 
 | Traditional AI | CRP |
 |:---|:---|
-| One voice, one answer | Five roles with conflicting perspectives |
+| One voice, one answer | Multiple roles with conflicting perspectives |
 | Optimizes for sounding right | Tests for being wrong |
-| Confirmation bias amplified | Confirmation bias neutralized |
-| Cost is an afterthought | Cost feasibility is a built-in step |
-| Answers "what should we do?" | Answers "what should we do, <em>and how could we be wrong?</em>" |
+| Confirmation bias amplified | Confirmation bias reduced |
+| Cost is an afterthought | Cost feasibility is built in |
+| Answers "what should we do?" or "how should this read?" | Separates decision review from content review |
 
-**Use CRP when:** the decision involves significant money, strategy, resources, or risk. Not for trivial choices.
+**Use `crp:decision` when:** the task involves significant money, strategy, resources, or risk.
 
-## The Five Roles
+**Use `crp:content` when:** the task involves scripts, articles, or video drafts that need stronger hooks, structure, or rewrite quality.
 
-| Role | Perspective | Core Question |
+## The Skills
+
+| Skill | Role Set | Core Use |
 |:---|:---|:---|
-| 🧠 **Advisor** | 机会构建者 / Builder | "What's the best way forward?" |
-| 🧨 **Devil** | 风险挑战者 / Skeptic | "Why is this wrong or risky?" |
-| 📚 **Historian** | 历史趋势分析者 / Pattern-matcher | "What does history tell us?" |
-| 🧮 **Budget Steward** | 资源与成本守门人 / Cost Guardian | "Can we afford this?" |
-| 🧱 **Founder** | 创业者最终决策者 / Decider | "What do we actually do?" |
+| `crp:decision` | Advisor, Devil, Historian, Budget Steward, Founder | Strategic decisions, tradeoffs, risk, resource allocation |
+| `crp:content` | Hook Analyst, Audience Psychologist, Story Editor, Trend Observer, Retention Auditor, Voice Guardian, Chief Editor | Content diagnosis and rewrite |
 
-## The Eight Steps
+## The Decision Skill Flow
 
-Every CRP analysis follows this exact sequence:
+`crp:decision` follows this sequence:
 
 ```
-1️⃣ Build (Advisor)               → Propose a concrete approach
-2️⃣ Challenge (Devil)             → Attack it with 3+ distinct risks
-3️⃣ Memory (Historian)            → Cite analogous patterns
-4️⃣ Budget Review (Budget Steward) → Evaluate cost feasibility
-5️⃣ Second-order Thinking         → Model ripple effects
-6️⃣ Decision                      → Make a concrete call
-7️⃣ Founder Filter                → Test vs strategy/resources
-8️⃣ How Could We Be Wrong?         → Find the failure modes
+Build (Advisor)
+→ Challenge (Devil)
+→ Memory (Historian)
+→ Budget Review (Budget Steward)
+→ Second-order Thinking
+→ Decision
+→ Founder Filter
+→ How Could We Be Wrong?
+```
+
+## The Content Skill Flow
+
+`crp:content` follows this sequence:
+
+```
+Idea Evaluation
+→ Public Interest Check
+→ Hook Review
+→ Story Structure
+→ Emotional Resonance
+→ Differentiation
+→ Retention Prediction
+→ Voice Protection
+→ Chief Editor Rewrite
+→ Final Content
 ```
 
 ## Quick Start
@@ -59,11 +78,13 @@ Every CRP analysis follows this exact sequence:
 ### Claude Code
 
 ```bash
-# Add to your skills directory
-cp skills/crp/SKILL.md .claude/skills/crp/SKILL.md
+# Copy the skills into your Claude skills directory
+cp skills/crp-decision/SKILL.md .claude/skills/crp-decision/SKILL.md
+cp skills/crp-content/SKILL.md .claude/skills/crp-content/SKILL.md
 
 # Then use:
-/crp Should we pivot to enterprise or keep doing PLG?
+/crp-decision Should we pivot to enterprise or keep doing PLG?
+/crp-content Rewrite this video script so the hook is stronger.
 ```
 
 ### ChatGPT (GPTs)
@@ -80,66 +101,95 @@ Paste the content from `adaptations/universal.md` into the system prompt.
 
 Add the instructions from `adaptations/codex.md` to your Codex system setup.
 
-## Output Format
+## Output Formats
 
-Every CRP response follows this exact structure:
+### `crp:decision`
 
 ```
-──────── CEO REVIEW ────────
 
-🧠 Build (Advisor)
+Build (Advisor)
 [proposal]
 
-🧨 Challenge (Devil)
+Challenge (Devil)
 [3+ risks]
 
-📚 Memory (Historian)
+Memory (Historian)
 [historical patterns]
 
-🧮 Budget Review (Budget Steward)
+Budget Review (Budget Steward)
 [cost feasibility]
 
-🔍 Second-order Thinking
+Second-order Thinking
 [ripple effects]
 
-⚖️ Decision
+Decision
 [concrete recommendation]
 
-🧱 Founder Filter
+Founder Filter
 [strategy check]
 
-⚠️ How Could We Be Wrong?
+How Could We Be Wrong?
 [failure conditions]
 
-────────────────────────────
+```
+
+### `crp:content`
+
+```
+Content Diagnosis:
+
+Hook Analyst:
+[analysis]
+
+Audience Psychologist:
+[analysis]
+
+Story Editor:
+[analysis]
+
+Trend Observer:
+[analysis]
+
+Retention Auditor:
+[analysis]
+
+Voice Guardian:
+[analysis]
+
+Chief Editor Rewrite:
+[rewrite]
+
+Why This Version Is Better:
+[brief explanation]
 ```
 
 ## Behavior Rules
 
 | Rule | Why |
 |:---|:---|
-| ⚠️ No skipping roles | Each role catches different blind spots |
-| ⚠️ Devil is mandatory | Without challenge, it's just confirmation |
-| ⚠️ Budget Steward is mandatory | Cost feasibility must never be an afterthought |
-| ⚠️ "How Could We Be Wrong?" required | The most important step |
-| ⚠️ No averaging | Decision is a judgment, not a compromise |
-| ⚠️ Distinct voices | If all roles agree, challenge harder |
+| Use the right skill for the right task | Decision review and content review solve different problems |
+| Keep role voices distinct | Each role catches different blind spots |
+| Do not skip mandatory checks | Devil / anti-fragility for decisions; Chief Editor rewrite for content |
+| Preserve authenticity | Stronger output should not erase the original voice or intent |
+| Keep the final output actionable | Decisions should end in a concrete path; content should end in a publishable rewrite |
 
 ## Repository Structure
 
 ```
-CEO-Review-Protocol-CRP--skills/
+CRP-CEO-Review-Protocol/
 ├── skills/
-│   └── crp/
-│       └── SKILL.md              # Core skill definition (canonical)
+│   ├── crp-decision/
+│   │   └── SKILL.md
+│   └── crp-content/
+│       └── SKILL.md
 ├── adaptations/
-│   ├── claude-code.md             # Claude Code /crp command
-│   ├── chatgpt-gpts.md            # ChatGPT GPTs instructions
-│   ├── codex.md                   # Codex adaptation
-│   └── universal.md               # Pure system prompt (any LLM)
-├── README.md                      # This file
-├── CONTRIBUTING.md                # How to contribute
-└── LICENSE                        # MIT
+│   ├── claude-code.md
+│   ├── chatgpt-gpts.md
+│   ├── codex.md
+│   └── universal.md
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
 ```
 
 ## Keeping Updated
@@ -147,14 +197,14 @@ CEO-Review-Protocol-CRP--skills/
 **We continuously improve CRP** based on real-world usage and community feedback. If you've installed CRP as a skill:
 
 - **Check for updates periodically** — we recommend reviewing the latest version monthly or at the start of each new project cycle
-- **If you use an AI agent** (Claude Code, Codex, etc.) — simply tell your agent to check this repository for updates. A well-configured agent will read the latest SKILL.md, compare it with your local copy, and apply any changes
-- **Manual update**: `git pull` the latest from this repo and re-copy `skills/crp/SKILL.md` to your skills directory
+- **If you use an AI agent** (Claude Code, Codex, etc.) — tell the agent to check this repository for updates. A well-configured agent will read the latest skill files, compare them with your local copy, and apply any changes
+- **Manual update**: `git pull` the latest from this repo and re-copy the relevant `skills/` files to your skills directory
 
-Changes are always backward-compatible. We don't break the core framework — we strengthen it.
+Changes are always backward-compatible. We do not break the core framework — we strengthen it.
 
 ## Status
 
-**Stable** — The core framework has been refined through hundreds of strategic reviews. Multi-platform adaptations are available and maintained.
+**Stable** — The core framework has been refined through many strategic reviews and content rewrites. Multi-platform adaptations are maintained.
 
 ## License
 
@@ -163,5 +213,5 @@ MIT — free for personal and commercial use. Improve the protocol and share bac
 ---
 
 <p align="center">
-  <em>Built for founders who want decisions, not opinions.</em>
+  <em>Built for users who want better decisions and better content.</em>
 </p>
