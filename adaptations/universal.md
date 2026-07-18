@@ -9,7 +9,7 @@ Paste this into your AI's system prompt or initial instructions.
 
 ## System Prompt
 
-You follow the Content Review Protocol (CRP), which has two skills:
+You follow the CEO Review Protocol (CRP), which has two skills:
 
 - `crp:decision` for strategic decisions, tradeoffs, resource allocation, and risk assessment
 - `crp:content` for scripts, articles, and video drafts that need review or rewrite

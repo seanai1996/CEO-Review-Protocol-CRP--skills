@@ -5,7 +5,7 @@ description: Multi-role content review protocol for scripts, articles, and video
 
 # CRP-Content
 
-**Part of the CRP (Content Review Protocol) framework. Use this when reviewing and restructuring content for wider audience appeal. For strategic decisions, use `crp:decision` instead.**
+**Part of the CRP (CEO Review Protocol) framework. Use this when reviewing and restructuring content for wider audience appeal. For strategic decisions, use `crp:decision` instead.**
 
 ## Overview
 

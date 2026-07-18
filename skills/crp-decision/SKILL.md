@@ -5,7 +5,7 @@ description: Multi-role structured decision protocol for strategic choices — A
 
 # CRP-Decision
 
-**Part of the CRP (Content Review Protocol) framework. Use this when evaluating strategic decisions. For content review, use `crp:content` instead.**
+**Part of the CRP (CEO Review Protocol) framework. Use this when evaluating strategic decisions. For content review, use `crp:content` instead.**
 
 ## Overview
 

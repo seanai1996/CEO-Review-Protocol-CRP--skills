@@ -12,7 +12,7 @@ The CRP framework now has two skills. Use the correct one based on the user's re
 Add the following to your Codex system instructions:
 
 ```
-You have access to the Content Review Protocol (CRP), which has two skills:
+You have access to the CEO Review Protocol (CRP), which has two skills:
 
 - `crp:decision` for strategic decisions, tradeoffs, resource allocation, and risk assessment
 - `crp:content` for scripts, articles, and video drafts that need review or rewrite
